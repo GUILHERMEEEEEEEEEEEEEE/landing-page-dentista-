@@ -124,3 +124,13 @@ body:has(.film-hero) .home-header .nav nav.clinic-top-nav a::after{background:#f
 @media(max-width:760px){.about-clinic-layout{grid-template-columns:1fr;gap:32px}.clinic-gallery{max-width:600px;width:100%;margin-inline:auto;padding:8px;border-radius:14px}.gallery-caption{flex-wrap:nowrap;padding:16px 5px 13px;gap:9px}.gallery-caption h3{font-size:14px}.gallery-controls{gap:4px}.gallery-controls button{width:35px;height:44px}.gallery-caption span{font-size:7px;line-height:1.5}.gallery-thumbnails{gap:5px;padding-inline:3px}.gallery-thumbnails img{height:55px}.gallery-source{font-size:9px;padding-inline:5px}}
 @media(prefers-reduced-motion:reduce){.clinic-gallery-slide{animation:none}.gallery-controls button,.gallery-thumbnails button{transition:none}}
 @media(min-width:761px) and (max-width:1000px){.about-clinic-layout{grid-template-columns:1fr;gap:35px}.clinic-gallery{max-width:680px;margin-inline:auto;width:100%}.about-clinic-copy{max-width:680px;margin-inline:auto}.gallery-caption{flex-wrap:nowrap}}
+/* Corrige o menu na tela inicial do celular */
+@media (max-width: 760px) {
+  body:has(.film-hero) .home-header .nav nav.clinic-top-nav {
+    position: static;
+    inset: auto;
+    background: transparent;
+    padding: 0;
+    border: 0;
+  }
+}   
